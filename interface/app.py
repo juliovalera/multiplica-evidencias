@@ -604,13 +604,25 @@ class MultiplicaApp(tk.Tk):
         )
         title.pack(anchor="w")
 
-        body = (
-            "Aplicação local, experimental e independente para apoiar encontros pedagógicos, "
-            "evidências e documentos mensais em diferentes contextos de uso."
+        intro_text = tk.Text(
+            self.home_tab,
+            wrap="word",
+            height=3,
+            borderwidth=0,
+            relief="flat",
+            background=self._ttk_background(),
+            font=("Segoe UI", 10),
         )
-        ttk.Label(self.home_tab, text=body, wraplength=860, justify="left").pack(
-            anchor="w", pady=(8, 12)
+        intro_text.insert("end", "Aplicação local, ")
+        intro_text.insert("end", "experimental e independente", "bold")
+        intro_text.insert(
+            "end",
+            " para apoiar encontros pedagógicos, evidências e documentos mensais "
+            "em diferentes contextos de uso.",
         )
+        intro_text.tag_configure("bold", font=("Segoe UI", 10, "bold"))
+        intro_text.config(state="disabled")
+        intro_text.pack(anchor="w", fill="x", pady=(8, 12))
         ttk.Label(
             self.home_tab,
             text=f"Versão atual: {APP_VERSION}",
@@ -675,18 +687,18 @@ class MultiplicaApp(tk.Tk):
         frame = ttk.LabelFrame(self.professor_tab, text="Dados do professor multiplicador", padding=10)
         frame.pack(fill="x", anchor="n")
 
-        labels = [
-            ("Nome", self.nome_var),
-            ("Tema", self.tema_var),
-            ("E-mail institucional", self.email_var),
-            ("Diretoria / URE", self.diretoria_var),
-            ("PEC responsável", self.pec_var),
-            ("Valor por formação semanal (R$)", self.valor_formacao_semanal_var),
+        fields = [
+            ("Nome", self.nome_var, 34),
+            ("Tema", self.tema_var, 34),
+            ("E-mail institucional", self.email_var, 42),
+            ("Diretoria / URE", self.diretoria_var, 28),
+            ("PEC responsável", self.pec_var, 24),
+            ("Valor por formação semanal (R$)", self.valor_formacao_semanal_var, 14),
         ]
-        for row, (label, variable) in enumerate(labels):
+        for row, (label, variable, width) in enumerate(fields):
             ttk.Label(frame, text=label).grid(row=row, column=0, sticky="w", pady=4)
-            entry = ttk.Entry(frame, textvariable=variable, width=68)
-            entry.grid(row=row, column=1, sticky="ew", pady=4, padx=(12, 0))
+            entry = ttk.Entry(frame, textvariable=variable, width=width)
+            entry.grid(row=row, column=1, sticky="w", pady=4, padx=(12, 0))
             if variable is self.valor_formacao_semanal_var:
                 entry.bind("<FocusOut>", self._normalize_currency_field, add="+")
 
@@ -716,16 +728,16 @@ class MultiplicaApp(tk.Tk):
         form.pack(fill="x", anchor="n")
 
         fields = [
-            ("Código da turma", self.turma_codigo_var, 44),
+            ("Código da turma", self.turma_codigo_var, 24),
             ("Dia da semana", self.turma_dia_var, 12),
             ("Horário", self.turma_horario_var, 10),
-            ("Tema / componente", self.turma_componente_var, 24),
+            ("Tema / componente", self.turma_componente_var, 30),
             ("Situação", self.turma_situacao_var, 12),
         ]
 
         ttk.Label(form, text=fields[0][0]).grid(row=0, column=0, sticky="w", pady=4)
         ttk.Entry(form, textvariable=fields[0][1], width=fields[0][2]).grid(
-            row=0, column=1, sticky="ew", pady=4, padx=(12, 16)
+            row=0, column=1, sticky="w", pady=4, padx=(12, 16)
         )
 
         ttk.Label(form, text=fields[1][0]).grid(row=0, column=2, sticky="w", pady=4)
@@ -744,7 +756,7 @@ class MultiplicaApp(tk.Tk):
 
         ttk.Label(form, text=fields[3][0]).grid(row=1, column=0, sticky="w", pady=4)
         ttk.Entry(form, textvariable=fields[3][1], width=fields[3][2]).grid(
-            row=1, column=1, columnspan=3, sticky="ew", pady=4, padx=(12, 16)
+            row=1, column=1, columnspan=3, sticky="w", pady=4, padx=(12, 16)
         )
 
         ttk.Label(form, text=fields[4][0]).grid(row=1, column=4, sticky="w", pady=4)
@@ -827,14 +839,14 @@ class MultiplicaApp(tk.Tk):
             form,
             textvariable=self.encontro_turma_var,
             state="readonly",
-            width=40,
+            width=28,
         )
         self.encontro_turma_combo.grid(
-            row=0, column=1, columnspan=4, sticky="ew", pady=4, padx=(12, 0)
+            row=0, column=1, columnspan=4, sticky="w", pady=4, padx=(12, 0)
         )
         self.encontro_turma_combo.bind("<<ComboboxSelected>>", self._on_encontro_turma_selected)
 
-        ttk.Label(form, text="Data (dd/mm/aaaa ou aaaa-mm-dd)").grid(
+        ttk.Label(form, text="Data").grid(
             row=1, column=0, sticky="w", pady=4
         )
         encontro_data_entry = ttk.Entry(form, textvariable=self.encontro_data_var, width=16)
@@ -881,7 +893,7 @@ class MultiplicaApp(tk.Tk):
             values=self.auto_observacao_names,
             textvariable=self.auto_observacao_var,
             state="readonly",
-            width=24,
+            width=18,
         ).grid(row=4, column=4, sticky="w", padx=(12, 0), pady=4)
 
         ttk.Button(form, text="Aplicar texto", command=self.apply_auto_observation).grid(
