@@ -1,0 +1,27 @@
+from pathlib import Path
+import re
+import unicodedata
+
+
+APP_NAME = "Multiplica Evidências"
+BASE_DIR = Path(__file__).resolve().parent
+INTERFACE_DIR = BASE_DIR / "interface"
+MODELOS_DIR = BASE_DIR / "modelos"
+DATA_DIR = BASE_DIR / "data"
+EVIDENCIAS_DIR = BASE_DIR / "evidencias"
+SAIDAS_DIR = BASE_DIR / "saidas"
+BACKUP_DIR = SAIDAS_DIR / "backups"
+DB_PATH = DATA_DIR / "multiplica.db"
+MODEL_DOCX_PATH = MODELOS_DIR / "evidencias.docx"
+
+
+def ensure_project_dirs() -> None:
+    for path in (DATA_DIR, EVIDENCIAS_DIR, SAIDAS_DIR, BACKUP_DIR, MODELOS_DIR):
+        path.mkdir(parents=True, exist_ok=True)
+
+
+def slugify(value: str) -> str:
+    normalized = unicodedata.normalize("NFKD", value or "")
+    ascii_only = normalized.encode("ascii", "ignore").decode("ascii")
+    cleaned = re.sub(r"[^A-Za-z0-9._-]+", "_", ascii_only.strip())
+    return cleaned.strip("._") or "item"
