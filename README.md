@@ -254,3 +254,27 @@ Sugestões, críticas construtivas e observações de melhoria são bem-vindas.
 ## Licença
 
 Este projeto está licenciado sob a licença `MIT`.
+
+### O que isso significa na prática?
+
+A licença `MIT` é uma licença aberta e bastante permissiva. Em termos simples, isso significa que outras pessoas podem:
+
+- usar este projeto livremente;
+- estudar como ele foi feito;
+- copiar e adaptar o código;
+- publicar versões modificadas;
+- utilizar o projeto em contexto pessoal, educacional ou até comercial.
+
+Em contrapartida, a licença também estabelece alguns pontos importantes:
+
+- o aviso de copyright e a própria licença devem acompanhar cópias relevantes do projeto;
+- o software é fornecido **“como está”**, sem garantia formal de funcionamento;
+- o autor não assume responsabilidade por problemas, prejuízos, falhas, uso indevido ou consequências geradas pelo uso do sistema.
+
+### Em linguagem direta para o usuário
+
+Você pode utilizar, estudar e adaptar este projeto, mas deve entender que:
+
+- o sistema é oferecido como ferramenta de apoio;
+- a responsabilidade pela conferência final das informações continua sendo do usuário;
+- antes de qualquer uso oficial, institucional ou administrativo, recomenda-se revisar cuidadosamente todos os dados e documentos gerados.
