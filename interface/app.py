@@ -332,6 +332,10 @@ class MultiplicaApp(tk.Tk):
             ],
             expand=[("selected", (1, 1, 1, 0))],
         )
+        self.style.configure(
+            "TButton",
+            padding=(10, 5),
+        )
 
     def _ttk_background(self, style_name: str = "TFrame") -> str:
         return self.style.lookup(style_name, "background") or "#f0f0f0"
@@ -852,7 +856,7 @@ class MultiplicaApp(tk.Tk):
         encontro_data_entry = ttk.Entry(form, textvariable=self.encontro_data_var, width=16)
         encontro_data_entry.grid(row=1, column=1, sticky="w", padx=(12, 8), pady=4)
         self._register_formatted_entry(encontro_data_entry, self._format_date_live)
-        ttk.Button(form, text="Calendário", command=self.open_encontro_calendar).grid(
+        ttk.Button(form, text="📅", width=3, command=self.open_encontro_calendar).grid(
             row=1, column=2, sticky="w", pady=4, padx=(0, 16)
         )
         ttk.Label(form, text="Número da pauta").grid(row=1, column=3, sticky="w", pady=4)
