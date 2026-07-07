@@ -333,6 +333,9 @@ class MultiplicaApp(tk.Tk):
             expand=[("selected", (1, 1, 1, 0))],
         )
 
+    def _ttk_background(self, style_name: str = "TFrame") -> str:
+        return self.style.lookup(style_name, "background") or "#f0f0f0"
+
     def _register_formatted_entry(self, entry: tk.Entry, formatter) -> None:
         widget_name = str(entry)
         self._formatted_entries[widget_name] = (entry, formatter)
@@ -602,8 +605,8 @@ class MultiplicaApp(tk.Tk):
         title.pack(anchor="w")
 
         body = (
-            "Aplicação local e independente para apoiar o professor multiplicador "
-            "na organização de encontros, evidências e documentos mensais."
+            "Aplicação local e independente para apoiar encontros pedagógicos, "
+            "evidências e documentos mensais em diferentes contextos de uso."
         )
         ttk.Label(self.home_tab, text=body, wraplength=860, justify="left").pack(
             anchor="w", pady=(8, 12)
@@ -617,12 +620,12 @@ class MultiplicaApp(tk.Tk):
             self.home_tab,
             text=(
                 "AVISO IMPORTANTE: ESTE PROJETO É INDEPENDENTE E NÃO OFICIAL.\n"
-                "A menção ao Programa Multiplica é apenas descritiva e não representa\n"
-                "homologação, licenciamento de marca ou vínculo institucional automático."
+                "Pode ser utilizado em encontros pedagógicos, inclusive em contextos como o\n"
+                "Programa Multiplica, sem representar homologação ou vínculo institucional automático."
             ),
             font=("Segoe UI", 10, "bold"),
             fg="#8b1e1e",
-            bg=self.home_tab.cget("background"),
+            bg=self._ttk_background(),
             justify="left",
         ).pack(anchor="w", pady=(0, 8))
         ttk.Label(
@@ -1970,12 +1973,12 @@ class MultiplicaApp(tk.Tk):
             container,
             text=(
                 "AVISO IMPORTANTE: PROJETO INDEPENDENTE E NÃO OFICIAL.\n"
-                "Uso descritivo do nome Programa Multiplica, sem homologação\n"
-                "ou vínculo institucional automático."
+                "Uso possível em encontros pedagógicos, inclusive em contextos como o\n"
+                "Programa Multiplica, sem homologação ou vínculo institucional automático."
             ),
             font=("Segoe UI", 10, "bold"),
             fg="#8b1e1e",
-            bg=container.cget("background"),
+            bg=self._ttk_background(),
             justify="left",
         ).pack(anchor="w", pady=(0, 10))
 
@@ -2064,11 +2067,11 @@ class MultiplicaApp(tk.Tk):
             container,
             text=(
                 "AVISO IMPORTANTE: ESTE SOFTWARE É INDEPENDENTE E NÃO OFICIAL.\n"
-                "A referência ao Programa Multiplica tem caráter apenas descritivo."
+                "Qualquer referência ao Programa Multiplica tem caráter apenas exemplificativo e descritivo."
             ),
             font=("Segoe UI", 10, "bold"),
             fg="#8b1e1e",
-            bg=container.cget("background"),
+            bg=self._ttk_background(),
             justify="left",
         ).pack(anchor="w", pady=(0, 12))
 
@@ -2171,11 +2174,12 @@ class MultiplicaApp(tk.Tk):
     def _get_terms_text(self) -> str:
         return (
             "Este projeto tem finalidade pedagógica, organizacional e de apoio técnico, tendo sido "
-            "desenvolvido para auxiliar o registro local de encontros, evidências e relatórios no "
-            "contexto de atuação do professor multiplicador.\n\n"
-            "A menção ao Programa Multiplica neste software tem caráter exclusivamente descritivo, "
-            "sem representar oficialidade, homologação, licenciamento de marca ou vínculo "
-            "institucional automático.\n\n"
+            "desenvolvido para auxiliar o registro local de encontros, evidências e relatórios em "
+            "diferentes contextos pedagógicos, inclusive no trabalho do professor multiplicador.\n\n"
+            "Este software pode ser utilizado em encontros pedagógicos diversos, inclusive em "
+            "contextos como o Programa Multiplica. Qualquer menção a esse nome tem caráter "
+            "exclusivamente descritivo e exemplificativo, sem representar oficialidade, homologação, "
+            "licenciamento de marca ou vínculo institucional automático.\n\n"
             "O sistema não substitui a conferência humana nem a validação institucional das informações, "
             "documentos, datas, imagens, horários, participantes e relatórios gerados. Antes de qualquer "
             "envio, protocolo ou uso oficial, o usuário deve revisar cuidadosamente todo o conteúdo.\n\n"
@@ -2197,10 +2201,10 @@ class MultiplicaApp(tk.Tk):
     def _get_about_text(self) -> str:
         return (
             "Este projeto foi concebido com finalidade pedagógica, organizacional e de apoio técnico, "
-            "buscando auxiliar o registro local de encontros, evidências e relatórios no contexto do "
-            "trabalho do professor multiplicador. "
-            "A referência ao Programa Multiplica é utilizada apenas para indicar esse contexto de uso, "
-            "sem afirmar caráter oficial do software.\n\n"
+            "buscando auxiliar o registro local de encontros, evidências e relatórios em diferentes "
+            "contextos de trabalho pedagógico, inclusive no cotidiano do professor multiplicador. "
+            "Pode ser utilizado, por exemplo, em contextos como o Programa Multiplica, sem que isso "
+            "represente caráter oficial do software.\n\n"
             "Sua motivação nasce de uma necessidade concreta da rotina docente: organizar informações com mais "
             "clareza, menos retrabalho e maior autonomia no uso dos próprios dados.\n\n"
             "Ao reunir essas informações em um único ambiente local, o sistema procura valorizar o tempo "

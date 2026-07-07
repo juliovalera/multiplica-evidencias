@@ -167,7 +167,7 @@ def _add_main_title(document: Any, title_text: str, month_data: Dict[str, object
     disclaimer = document.add_paragraph(style="CabecalhoRelatorio")
     disclaimer.alignment = WD_ALIGN_PARAGRAPH.CENTER
     disclaimer_run = disclaimer.add_run(
-        "Ferramenta independente de apoio. Documento não oficial."
+        "Ferramenta independente de apoio a encontros pedagógicos. Documento não oficial."
     )
     disclaimer_run.bold = True
 
@@ -268,7 +268,7 @@ def generate_docx(
     _add_page_number_footer(document)
     _add_main_title(
         document,
-        "Relatório Mensal de Evidências - Ferramenta de Apoio ao Professor Multiplicador",
+        "Relatório Mensal de Evidências - Encontros Pedagógicos",
         month_data,
     )
     document.add_paragraph()
@@ -372,7 +372,7 @@ def generate_financial_statement_docx(
     _add_page_number_footer(document)
     _add_main_title(
         document,
-        "Extrato Financeiro Mensal - Ferramenta de Apoio ao Professor Multiplicador",
+        "Extrato Financeiro Mensal - Encontros Pedagógicos",
         month_data,
     )
     document.add_paragraph()

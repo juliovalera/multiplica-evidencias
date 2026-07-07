@@ -3,8 +3,8 @@
 <h1>📘 Multiplica Evidências</h1>
 
 <p>
-  Aplicação desktop em Python para apoiar o professor multiplicador na organização local de encontros,
-  evidências e documentos mensais relacionados ao <strong>Programa Multiplica</strong>.
+  Aplicação desktop em Python para apoiar o registro local de encontros pedagógicos,
+  evidências e documentos mensais, inclusive em contextos como o <strong>Programa Multiplica</strong>.
 </p>
 
 <p>
@@ -21,11 +21,12 @@
   <strong>Primeira publicação pública:</strong> <code>1.000</code>
 </p>
 
-<p><em>Ferramenta independente de apoio ao professor multiplicador, com foco em organização, evidências e documentação mensal.</em></p>
+<p><em>Ferramenta independente de apoio a encontros pedagógicos, com foco em organização, evidências e documentação mensal.</em></p>
 
 > **AVISO IMPORTANTE:** **este projeto é INDEPENDENTE e NÃO OFICIAL.**  
 > **Não representa sistema oficial, homologação institucional, licenciamento de marca ou vínculo institucional automático.**  
-> **A menção ao Programa Multiplica é apenas descritiva, para indicar o contexto de uso da ferramenta.**
+> **Pode ser utilizado em encontros pedagógicos diversos, inclusive em contextos como o Programa Multiplica.**  
+> **Qualquer menção ao Programa Multiplica é apenas exemplificativa e descritiva.**
 
 </div>
 
@@ -33,9 +34,9 @@
 
 ## Visão geral
 
-O projeto foi criado para reduzir retrabalho no registro mensal de encontros do professor multiplicador. A aplicação centraliza professor, turmas, encontros, evidências, checklist e geração de arquivos em um fluxo local, simples e sem dependência de internet.
+O projeto foi criado para reduzir retrabalho no registro mensal de encontros pedagógicos. A aplicação centraliza professor responsável, turmas, encontros, evidências, checklist e geração de arquivos em um fluxo local, simples e sem dependência de internet.
 
-> **Importante:** este projeto é uma ferramenta **independente e não oficial**, desenvolvida para uso de apoio no contexto do Programa Multiplica. **O nome do programa é utilizado apenas de forma descritiva**, para indicar o ambiente de aplicação da ferramenta.
+> **Importante:** este projeto é uma ferramenta **independente e não oficial**, desenvolvida para apoio a **encontros pedagógicos**. Pode ser utilizada em diferentes contextos, **como por exemplo o Programa Multiplica**, sem qualquer afirmação de oficialidade, homologação ou vínculo institucional automático.
 
 ## Principais recursos
 
