@@ -167,7 +167,7 @@ def _add_main_title(document: Any, title_text: str, month_data: Dict[str, object
     disclaimer = document.add_paragraph(style="CabecalhoRelatorio")
     disclaimer.alignment = WD_ALIGN_PARAGRAPH.CENTER
     disclaimer_run = disclaimer.add_run(
-        "Ferramenta independente de apoio a encontros pedagógicos. Documento não oficial."
+        "Ferramenta experimental e independente de apoio a encontros pedagógicos. Documento não oficial."
     )
     disclaimer_run.bold = True
 

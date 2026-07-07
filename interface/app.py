@@ -605,7 +605,7 @@ class MultiplicaApp(tk.Tk):
         title.pack(anchor="w")
 
         body = (
-            "Aplicação local e independente para apoiar encontros pedagógicos, "
+            "Aplicação local, experimental e independente para apoiar encontros pedagógicos, "
             "evidências e documentos mensais em diferentes contextos de uso."
         )
         ttk.Label(self.home_tab, text=body, wraplength=860, justify="left").pack(
@@ -620,7 +620,7 @@ class MultiplicaApp(tk.Tk):
             self.home_tab,
             text=(
                 "AVISO IMPORTANTE: ESTE PROJETO É INDEPENDENTE E NÃO OFICIAL.\n"
-                "Pode ser utilizado em encontros pedagógicos, inclusive em contextos como o\n"
+                "Pode ser utilizado experimentalmente em encontros pedagógicos, inclusive em contextos como o\n"
                 "Programa Multiplica, sem representar homologação ou vínculo institucional automático."
             ),
             font=("Segoe UI", 10, "bold"),
@@ -1973,7 +1973,7 @@ class MultiplicaApp(tk.Tk):
             container,
             text=(
                 "AVISO IMPORTANTE: PROJETO INDEPENDENTE E NÃO OFICIAL.\n"
-                "Uso possível em encontros pedagógicos, inclusive em contextos como o\n"
+                "Uso experimental possível em encontros pedagógicos, inclusive em contextos como o\n"
                 "Programa Multiplica, sem homologação ou vínculo institucional automático."
             ),
             font=("Segoe UI", 10, "bold"),
@@ -2067,7 +2067,7 @@ class MultiplicaApp(tk.Tk):
             container,
             text=(
                 "AVISO IMPORTANTE: ESTE SOFTWARE É INDEPENDENTE E NÃO OFICIAL.\n"
-                "Qualquer referência ao Programa Multiplica tem caráter apenas exemplificativo e descritivo."
+                "Pode ser utilizado experimentalmente em encontros pedagógicos; qualquer referência ao Programa Multiplica é apenas exemplificativa e descritiva."
             ),
             font=("Segoe UI", 10, "bold"),
             fg="#8b1e1e",
@@ -2176,7 +2176,7 @@ class MultiplicaApp(tk.Tk):
             "Este projeto tem finalidade pedagógica, organizacional e de apoio técnico, tendo sido "
             "desenvolvido para auxiliar o registro local de encontros, evidências e relatórios em "
             "diferentes contextos pedagógicos, inclusive no trabalho do professor multiplicador.\n\n"
-            "Este software pode ser utilizado em encontros pedagógicos diversos, inclusive em "
+            "Este software pode ser utilizado experimentalmente em encontros pedagógicos diversos, inclusive em "
             "contextos como o Programa Multiplica. Qualquer menção a esse nome tem caráter "
             "exclusivamente descritivo e exemplificativo, sem representar oficialidade, homologação, "
             "licenciamento de marca ou vínculo institucional automático.\n\n"
@@ -2203,7 +2203,7 @@ class MultiplicaApp(tk.Tk):
             "Este projeto foi concebido com finalidade pedagógica, organizacional e de apoio técnico, "
             "buscando auxiliar o registro local de encontros, evidências e relatórios em diferentes "
             "contextos de trabalho pedagógico, inclusive no cotidiano do professor multiplicador. "
-            "Pode ser utilizado, por exemplo, em contextos como o Programa Multiplica, sem que isso "
+            "Pode ser utilizado experimentalmente, por exemplo, em contextos como o Programa Multiplica, sem que isso "
             "represente caráter oficial do software.\n\n"
             "Sua motivação nasce de uma necessidade concreta da rotina docente: organizar informações com mais "
             "clareza, menos retrabalho e maior autonomia no uso dos próprios dados.\n\n"

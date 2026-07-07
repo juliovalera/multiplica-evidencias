@@ -13,19 +13,19 @@
   <img alt="SQLite" src="https://img.shields.io/badge/Banco-SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white">
   <img alt="DOCX/PDF" src="https://img.shields.io/badge/Relat%C3%B3rios-DOCX%20%2F%20PDF-8A2BE2?style=for-the-badge">
   <img alt="Licença MIT" src="https://img.shields.io/badge/Licen%C3%A7a-MIT-E0A800?style=for-the-badge">
-  <img alt="Versão 1,023" src="https://img.shields.io/badge/Vers%C3%A3o-1.023-7B1FA2?style=for-the-badge">
+  <img alt="Versão 1,026" src="https://img.shields.io/badge/Vers%C3%A3o-1.026-7B1FA2?style=for-the-badge">
 </p>
 
 <p>
-  <strong>Versão atual:</strong> <code>1,023</code> &nbsp;•&nbsp;
+  <strong>Versão atual:</strong> <code>1,026</code> &nbsp;•&nbsp;
   <strong>Primeira publicação pública:</strong> <code>1.000</code>
 </p>
 
-<p><em>Ferramenta independente de apoio a encontros pedagógicos, com foco em organização, evidências e documentação mensal.</em></p>
+<p><em>Ferramenta experimental e independente de apoio a encontros pedagógicos, com foco em organização, evidências e documentação mensal.</em></p>
 
 > **AVISO IMPORTANTE:** **este projeto é INDEPENDENTE e NÃO OFICIAL.**  
 > **Não representa sistema oficial, homologação institucional, licenciamento de marca ou vínculo institucional automático.**  
-> **Pode ser utilizado em encontros pedagógicos diversos, inclusive em contextos como o Programa Multiplica.**  
+> **Pode ser utilizado experimentalmente em encontros pedagógicos diversos, inclusive em contextos como o Programa Multiplica.**  
 > **Qualquer menção ao Programa Multiplica é apenas exemplificativa e descritiva.**
 
 </div>
@@ -36,7 +36,7 @@
 
 O projeto foi criado para reduzir retrabalho no registro mensal de encontros pedagógicos. A aplicação centraliza professor responsável, turmas, encontros, evidências, checklist e geração de arquivos em um fluxo local, simples e sem dependência de internet.
 
-> **Importante:** este projeto é uma ferramenta **independente e não oficial**, desenvolvida para apoio a **encontros pedagógicos**. Pode ser utilizada em diferentes contextos, **como por exemplo o Programa Multiplica**, sem qualquer afirmação de oficialidade, homologação ou vínculo institucional automático.
+> **Importante:** este projeto é uma ferramenta **experimental, independente e não oficial**, desenvolvida para apoio a **encontros pedagógicos**. Pode ser utilizada em diferentes contextos, **como por exemplo o Programa Multiplica**, sem qualquer afirmação de oficialidade, homologação ou vínculo institucional automático.
 
 ## Principais recursos
 
@@ -190,7 +190,7 @@ Inclui:
 O projeto adota um versionamento incremental a partir da publicação pública inicial no GitHub.
 
 - `1.000` → publicação pública inicial
-- `1,023` → versão atual, consolidando **23 implementações e correções** desde a primeira publicação
+- `1,026` → versão atual, consolidando **26 implementações e correções** desde a primeira publicação
 
 > Convenção adotada neste projeto: a parte fracionária representa o acumulado de implementações/correções relevantes publicadas após a base `1.000`.
 
@@ -198,7 +198,7 @@ O projeto adota um versionamento incremental a partir da publicação pública i
 
 ## Histórico de versões
 
-### Versão 1.023 — pacote acumulado de 23 implementações e correções
+### Versão 1.026 — pacote acumulado de 26 implementações e correções
 
 1. Criação automática do mês a partir da data do encontro.
 2. Reaproveitamento de dados padrão do professor multiplicador.
@@ -223,6 +223,9 @@ O projeto adota um versionamento incremental a partir da publicação pública i
 21. Nomes de arquivos com iniciais do professor e carimbo de data/hora.
 22. Termos de uso no primeiro acesso e tela `Sobre o projeto` com créditos e contatos.
 23. Compactação do layout para melhor uso em telas menores.
+24. Reforço da comunicação de projeto independente e não oficial.
+25. Correção do erro de `background` em componentes `ttk`.
+26. Adoção da redação de uso experimental em avisos, README e documentos.
 
 ### Versão 1.000 — publicação pública inicial
 
