@@ -2,6 +2,12 @@
 
 <h1>📘 Multiplica Evidências</h1>
 
+<p><strong>Linha 1 — versão básica e estável</strong></p>
+
+<p><em>Esta é a edição básica e estável do projeto, indicada para quem busca as funcionalidades essenciais em uma estrutura consolidada.</em></p>
+
+<p><strong>Linha 2 — edição avançada:</strong> <a href="https://github.com/juliovalera/multiplica-evidencias-v2">github.com/juliovalera/multiplica-evidencias-v2</a></p>
+
 <p>
   Aplicação desktop em Python para apoiar o registro local de encontros pedagógicos,
   evidências e documentos mensais, inclusive em contextos como o <strong>Programa Multiplica</strong>.
@@ -35,6 +41,8 @@
 ## Visão geral
 
 O projeto foi criado para reduzir retrabalho no registro mensal de encontros pedagógicos. A aplicação centraliza professor responsável, turmas, encontros, evidências, checklist e geração de arquivos em um fluxo local, simples e sem dependência de internet.
+
+Este repositório corresponde à **Linha 1**, mantida como uma versão **básica, estável e consolidada**, com as funcionalidades essenciais do projeto. Para recursos adicionais e uma evolução funcional mais avançada, consulte a **[Linha 2 — edição avançada](https://github.com/juliovalera/multiplica-evidencias-v2)**.
 
 > **Importante:** este projeto é uma ferramenta **experimental, independente e não oficial**, desenvolvida para apoio a **encontros pedagógicos**. Pode ser utilizada em diferentes contextos, **como por exemplo o Programa Multiplica**, sem qualquer afirmação de oficialidade, homologação ou vínculo institucional automático.
 
@@ -190,9 +198,12 @@ Inclui:
 O projeto adota um versionamento incremental a partir da publicação pública inicial no GitHub.
 
 - `1.000` → publicação pública inicial
-- `1,027` → versão atual, consolidando **27 implementações e correções** desde a primeira publicação
+- `1,027` → versão atual da **Linha 1**, consolidando **27 implementações e correções** desde a primeira publicação
+- `2.x` → **Linha 2**, publicada em repositório separado e destinada à evolução funcional avançada
 
-> Convenção adotada neste projeto: a parte fracionária representa o acumulado de implementações/correções relevantes publicadas após a base `1.000`.
+> Convenção adotada neste projeto: a parte fracionária representa o acumulado de implementações/correções relevantes publicadas após a base `1.000`. Esta Linha `1.x` permanece como edição básica e estável, enquanto a Linha `2.x` concentra os recursos e evoluções avançadas.
+
+A edição avançada está disponível em: **[Multiplica Evidências — Linha 2](https://github.com/juliovalera/multiplica-evidencias-v2)**.
 
 ---
 
@@ -242,7 +253,8 @@ O projeto adota um versionamento incremental a partir da publicação pública i
 
 ## Observações importantes
 
-- O projeto está em desenvolvimento contínuo.
+- Este repositório corresponde à **Linha 1**, considerada a versão básica e estável do projeto.
+- Os recursos mais avançados e as novas evoluções funcionais são publicados na **[Linha 2](https://github.com/juliovalera/multiplica-evidencias-v2)**.
 - O usuário deve revisar cuidadosamente os dados antes de qualquer uso oficial.
 - O sistema apoia a organização e a geração documental, mas não substitui conferência humana nem validação institucional.
 
